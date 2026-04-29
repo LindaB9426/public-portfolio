@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, Heading, VStack, HStack, Image } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
+import avatar from "../images/avatar2.jpg";
+import courses from "../images/courses.png";
 
 
 
@@ -20,7 +22,7 @@ const AboutSection = () => (
             <Heading as='h1' size='xl'>
                 About me
             </Heading> 
-            <Image src="/images/avatar2.jpg" w="80%"  borderRadius={10}>
+            <Image src={avatar} w="80%"  borderRadius={10}>
             </Image>
                    
             <Text fontSize="sm" textAlign="center" maxW="600px">
@@ -36,7 +38,7 @@ const AboutSection = () => (
             <Heading as="h1" size="xl">
               Courses
             </Heading>
-            <Image src="/images/courses.png" alt="certificate"  w="50%" borderRadius={10}>
+            <Image src={courses} alt="certificate"  w="50%" borderRadius={10}>
             </Image>
             <Text fontSize="sm" textAlign="center" maxW="600px">
                 Meta Front-End Developer Professional Certificate (Coursera) – 
