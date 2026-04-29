@@ -20,7 +20,7 @@ const AboutSection = () => (
             <Heading as='h1' size='xl'>
                 About me
             </Heading> 
-            <Image src="/avatar2.jpg" w="80%"  borderRadius={10}>
+            <Image src="/images/avatar2.jpg" w="80%"  borderRadius={10}>
             </Image>
                    
             <Text fontSize="sm" textAlign="center" maxW="600px">
@@ -36,7 +36,7 @@ const AboutSection = () => (
             <Heading as="h1" size="xl">
               Courses
             </Heading>
-            <Image src="/courses.png" alt="certificate"  w="50%" borderRadius={10}>
+            <Image src="/images/courses.png" alt="certificate"  w="50%" borderRadius={10}>
             </Image>
             <Text fontSize="sm" textAlign="center" maxW="600px">
                 Meta Front-End Developer Professional Certificate (Coursera) – 
