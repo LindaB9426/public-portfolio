@@ -66,16 +66,10 @@ const Header = () => {
             </HStack>
           </nav>
           <nav>
-            <HStack spacing={8}>
-              <a href="#home-section" onClick={handleClick("home")}>
-              Home
-              </a>
-              <a href="#about-section" onClick={handleClick("about")}>
-              About
-              </a>
-              <a href="#projects-section" onClick={handleClick("projects")}>
-              Projects
-              </a>
+            <HStack flexDirection={{ base: "column", md: "row" }}>
+              <a href="#about-section">About</a>
+              <a href="#home-section">Home</a>
+              <a href="#projects-section">Projects</a>
             </HStack>
           </nav>
         </HStack>

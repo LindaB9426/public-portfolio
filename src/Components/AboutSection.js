@@ -44,7 +44,7 @@ const AboutSection = () => (
                 babre.linda@gmail.com
             </Text>
         </VStack>
-        <VStack spacing={6} boxShadow="0 0 60px rgba(106, 106, 106, 0.4)">
+        <VStack w={{ base: "100%", md: "50%" }} spacing={6} boxShadow="0 0 60px rgba(106, 106, 106, 0.4)">
             <Heading as="h1" size="xl">
               Courses
             </Heading>
