@@ -1,15 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Box, Flex } from "@chakra-ui/react";
 
 const Footer = () => {
-  const [showCounter, setShowCounter] = useState(true);
-
-  useEffect(() => {
-    if (window.location.hostname === "localhost") {
-      setShowCounter(false);
-    }
-  }, []);
-
   return (
     <Box bgGradient="linear(to-b, #090909, #353535, #858585)">
       <footer>
@@ -24,14 +16,6 @@ const Footer = () => {
           flexDirection="column"
         >
           <p>Linda • © 2026</p>
-
-          {showCounter && (
-            <img
-              src="https://komarev.com/ghpvc/?username=LindaB9426&label=Page%20views&color=0e75b6&style=flat"
-              alt="Page views"
-              style={{ marginTop: "4px" }}
-            />
-          )}
         </Flex>
       </footer>
     </Box>
