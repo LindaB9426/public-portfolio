@@ -17,13 +17,23 @@ const AboutSection = () => (
     spacing={8}
 
   >
-    <HStack spacing={10} w="100%" justify="center" align="flex-start" >
-        <VStack spacing={6} boxShadow="0 0 60px rgba(106, 106, 106, 0.4)">
+    
+    <HStack
+        spacing={10}
+        w="100%"
+        justify="center"
+        align="flex-start"
+        flexDirection={{ base: "column", md: "row" }}
+    >
+        <VStack w={{ base: "100%", md: "50%" }} spacing={6} boxShadow="0 0 60px rgba(106, 106, 106, 0.4)">
             <Heading as='h1' size='xl'>
                 About me
             </Heading> 
-            <Image src={avatar} w="80%"  borderRadius={10}>
-            </Image>
+            <Image
+                src={avatar}
+                w={{ base: "60%", md: "80%" }}
+                borderRadius={10}
+            />
                    
             <Text fontSize="sm" textAlign="center" maxW="600px">
                 I am an aspiring front-end developer with a strong interest in creating user-friendly and visually appealing web solutions. 
