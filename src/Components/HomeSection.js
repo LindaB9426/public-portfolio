@@ -15,7 +15,7 @@ const HomeSection = () => (
 
   >
     <VStack spacing={6} textAlign="center" >
-        <Avatar src="/avatar.jpg" boxSize="20em" boxShadow="0 0 60px rgba(106, 106, 106, 0.4)" />
+        <Avatar src="/public/avatar.jpg" boxSize="20em" boxShadow="0 0 60px rgba(106, 106, 106, 0.4)" />
         <Heading as='h1' size='xl'>
             Hi, I'm Linda
         </Heading>        
