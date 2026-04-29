@@ -50,14 +50,13 @@ const Header = () => {
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
-          px={16}
+          px={{ base: 4, md: 16 }}
           py={4}
           justifyContent="space-between"
           alignItems="center"
-          
         >
           <nav>
-            <HStack spacing={4}>
+            <HStack spacing={{ base: 2, md: 4 }}>
               {socials.map((social, index) => (
                 <a key={index} href={social.url}>
                   <FontAwesomeIcon icon={social.icon} size="2x" />
@@ -65,14 +64,21 @@ const Header = () => {
               ))}
             </HStack>
           </nav>
+
           <nav>
-            <HStack flexDirection={{ base: "column", md: "row" }}>
-              <a href="#about-section">About</a>
+            <HStack
+              spacing={{ base: 3, md: 6 }}
+              justifyContent="center"
+              alignItems="center"
+              fontSize={{ base: "sm", md: "md" }}
+              whiteSpace="nowrap"
+            >
               <a href="#home-section">Home</a>
+              <a href="#about-section">About</a>
               <a href="#projects-section">Projects</a>
             </HStack>
           </nav>
-        </HStack>
+        </HStack>        
       </Box>
     </Box>
   );
