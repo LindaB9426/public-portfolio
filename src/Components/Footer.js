@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Box, Flex } from "@chakra-ui/react";
 
 const Footer = () => {
+  const [showCounter, setShowCounter] = useState(true);
+
+  useEffect(() => {
+
+    if (window.location.hostname === "localhost") {
+      setShowCounter(false);
+    }
+  }, []);
   return (
     <Box bgGradient="linear(to-b, #090909, #353535, #858585)">
       <footer>
@@ -12,8 +20,8 @@ const Footer = () => {
           justifyContent="center"
           alignItems="center"
           maxWidth="1024px"
-          height={20} // nedaudz augstāks, lai telpa counter
-          flexDirection="column" // lai counter parādās zem teksta
+          height={20} 
+          flexDirection="column" 
         >
           <p>Linda • © 2026</p>
           <img
