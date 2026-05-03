@@ -48,7 +48,11 @@ const AboutSection = () => (
             <Heading as="h1" size="xl">
               Courses
             </Heading>
-            <Image src={courses} alt="certificate"  w="50%" borderRadius={10}>
+            <Image 
+                src={courses} 
+                w={{ base: "60%", md: "80%" }}
+                w="60%" 
+                borderRadius={10}>
             </Image>
             <Text fontSize="sm" textAlign="center" maxW="600px">
                 Meta Front-End Developer Professional Certificate (Coursera) – 
